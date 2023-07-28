@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "ShowButton",
+    "description": "Show a button",
+    "version": "1.0",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["./script.js"],
+        "css":["./style.css"]
+      }
+    ],
+    "action":{
+      "default_popup":"popup.html"
+    }
+}
